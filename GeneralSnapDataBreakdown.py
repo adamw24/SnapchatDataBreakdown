@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+table_Chats = pd.read_html('D:\SnapchatData\html\chat_history.html')
+table_Snaps = pd.read_html('D:\SnapchatData\html\snap_history.html')
+
 
 def parseCounts(table, dictF, dictT):
     for name in table[0]["From"]:
@@ -20,8 +23,6 @@ def parseCounts(table, dictF, dictT):
 
 def main():
     # Use pandas to parse the downloaded snapchat data into tables.
-    table_Chats = pd.read_html('D:\SnapchatData\html\chat_history.html')
-    table_Snaps = pd.read_html('D:\SnapchatData\html\snap_history.html')
 
     dict_From = {}
     dict_To = {}
