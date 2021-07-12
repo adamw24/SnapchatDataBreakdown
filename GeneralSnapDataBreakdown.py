@@ -1,3 +1,6 @@
+# Uses the data and breaks down how many snaps I have sent and recieved from each user over the last month.
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
